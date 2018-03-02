@@ -901,4 +901,10 @@ static const void *kWeViewKey_ViewInfo = &kWeViewKey_ViewInfo;
     return self;
 }
 
+#pragma maek - Baseline
+- (CGFloat)getBaseLine
+{
+    return self.frame.size.height/2;
+}
+
 @end

@@ -273,6 +273,7 @@ CGRectCenterOnRect(CGRect r0, CGRect r1)
 CG_INLINE CGPoint
 CGRectCenter(const CGRect r)
 {
-    return CGPointMake(r.origin.x + r.size.width * 0.5f,
-                       r.origin.y + r.size.height * 0.5f);
+    return CGPointMake(CGRectGetMidX(r),
+                       CGRectGetMidY(r));
 }
+

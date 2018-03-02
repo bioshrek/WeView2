@@ -254,4 +254,8 @@
 
 - (void)resetAllLayoutProperties;
 
+#pragma mark - BaseLine
+
+- (CGFloat)getBaseLine;
+
 @end

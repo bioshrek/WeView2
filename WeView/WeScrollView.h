@@ -12,6 +12,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UIView+WeView.h"
 
 @interface WeScrollView : UIScrollView
 

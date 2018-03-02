@@ -8,7 +8,6 @@
 //  http://www.apache.org/licenses/LICENSE-2.0.html
 //
 
-#import "UIView+WeView.h"
 #import "WeScrollView.h"
 
 typedef enum {
@@ -131,7 +130,8 @@ typedef enum {
     
     if (_contentView == nil) {
         self.contentSize = CGSizeZero;
-        self.scrollEnabled = NO;
+		// bouncing
+//        self.scrollEnabled = NO;
         return;
     }
     
@@ -140,13 +140,13 @@ typedef enum {
         case SCROLL_MODE_HORIZONTAL: {
             CGSize maxSize = CGSizeMake(0, self.frame.size.height);
             size = [_contentView sizeThatFits:maxSize];
-            size.height = self.bounds.size.height;
+//            size.height = self.bounds.size.height;
             break;
         }
         case SCROLL_MODE_VERTICAL: {
             CGSize maxSize = CGSizeMake(self.frame.size.width, 0);
             size = [_contentView sizeThatFits:maxSize];
-            size.width = self.bounds.size.width;
+//            size.width = self.bounds.size.width;
             break;
         }
         case SCROLL_MODE_BOTH:
@@ -187,9 +187,10 @@ typedef enum {
     _contentView.frame = contentFrame;
     
     // TODO: clip scrollOffset.
-    self.scrollEnabled = ((self.contentSize.width > self.width) ||
-                          (self.contentSize.height > self.height));
-    
+	// bouncing
+//    self.scrollEnabled = ((self.contentSize.width > self.width) ||
+//                          (self.contentSize.height > self.height));
+	
     [self setNeedsDisplay];
 }
 
