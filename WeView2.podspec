@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'WeView2'
-  s.version      = '1.0.0'
+  s.version      = '1.0.1'
   s.summary      = 'An iOS Auto Layout Alternative.'
   s.description  = 'The WeView library is a tool for auto layout of iOS UIs. It is an alternative to iOS\'s built-in Auto Layout Mechanism.'
   s.homepage     = 'https://github.com/bioshrek/WeView2'
