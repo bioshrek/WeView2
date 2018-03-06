@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/bioshrek/WeView2.git', :tag => s.version }
   s.ios.deployment_target = '7.0'
   s.source_files = 'WeView/*.{m,h}', 'WeView/Layouts/*.{m,h}'
-  s.public_header_files = 'WeView/*.h'
+  s.public_header_files = 'WeView/*.h', 'WeView/Layouts/*.h'
 end
